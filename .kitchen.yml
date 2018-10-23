@@ -1,22 +1,20 @@
 ---
 driver:
   name: terraform
-  variable_files:
-    - testing.tfvars
 
 provisioner:
   name: terraform
 
 platforms:
   - name: ubuntu
-
+ 
 verifier:
   name: terraform
-  reporter: doc
-  groups:
+  systems:
     - name: default
+      backend: local
       controls:
-        - check_website
+      - check_repo
 
 suites:
   - name: default
