@@ -20,6 +20,7 @@ where travis test is defined. In this case travis uses kitchen-terraform test.
 
 **You need first to install Terraform CLI and the other prerequisites below so you can run test locally.**
 
+  -  You need to create Git hub token and add it as Environmental variable in Terraform enterprice or your local shell by `export TF_VAR_github_token` so Terraform can create and delete repositories in the specified organization in the main.tf file.
   -  `brew install terraform`
   -  `brew install rbenv`
   -  `rbenv install 2.3.1`
