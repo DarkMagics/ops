@@ -24,7 +24,6 @@ where travis test is defined. In this case travis uses kitchen-terraform test.
   -  `brew install terraform`
   -  `brew install rbenv`
   -  `rbenv install 2.3.1`
-  -  install chefdk 2.5.3-1 version from the official site
   -  `gem install kitchen-terraform`
   -  `gem install bundler`
   -  `bundle install`
